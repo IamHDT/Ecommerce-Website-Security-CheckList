@@ -50,3 +50,66 @@ The storage capabilities or repository used by the session management mechanism 
 * [ ] A8 Cross-Site Request Forgery (CSRF) (was formerly 2010-A5)
 * [ ] A9 Using Components with Known Vulnerabilities (new but was part of 2010-A6 – Security Misconfiguration)
 * [ ] A10 Unvalidated Redirects and Forwards
+
+## PCI DSS (Credit/Debit Card Handling) in applications
+Essentially, requirements 3, 4, 6, 8, 10 of the PCI DSS Standard version 3.1
+### Requirement 3: Protect stored cardholder data
+* [ ] 3.1 - Keep cardholder data storage to a minimum by implementing data retention and disposal policies, procedures and processes that include at least the following for all cardholder data (CHD) storage: 
+     * [ ] Limiting data storage amount and retention time to that which is required for legal, regulatory, and/or business requirements 
+     * [ ] Specific retention requirements for cardholder data 
+     * [ ] Processes for secure deletion of data when no longer needed 
+     * [ ] A quarterly process for identifying and securely deleting stored cardholder data that exceeds defined retention.
+* [ ] 3.1a - Examine the data retention and disposal policies, procedures and processes to verify they include the following for all cardholder data (CHD) storage:
+Limiting data storage amount and retention time to that which is required for legal, regulatory, and/or business requirements.
+Specific requirements for retention of cardholder data (for example, cardholder data needs to be held for X period for Y business reasons).
+Processes for secure deletion of cardholder data when no longer needed for legal, regulatory, or business reasons. 
+A quarterly process for identifying and securely deleting stored cardholder data that exceeds defined retention requirements.
+* [ ] 3.1c - For a sample of system components that store cardholder data:
+Examine files and system records to verify that the data stored does not exceed the requirements defined in the data retention policy 
+     * [ ] Observe the deletion mechanism to verify data is deleted securely.
+* [ ] 3.2 - Do not store sensitive authentication data after authorization (even if encrypted). If sensitive authentication data is received, render all data unrecoverable upon completion of the authorization process.
+* [ ] 3.2.1 - Do not store the full contents of any track (from the magnetic stripe located on the back of a card, equivalent data contained on a chip, or elsewhere) after authorization. This data is alternatively called full track, track, track 1, track 2, and magneticstripe data.
+* [ ] 3.2.2 - Do not store the card verification code or value (three-digit or four-digit number printed on the front or back of a payment card used to verify card-notpresent transactions) after authorization.
+* [ ] 3.2.3 - Do not store the personal identification number (PIN) or the encrypted PIN block after authorization.
+* [ ] 3.3 - Mask PAN when displayed (the first six and last four digits are the maximum number of digits to be displayed), such that only personnel with a legitimate business need can see the full PAN
+* [ ] 3.3a - Examine written policies and procedures for masking the display of PANs to verify: 
+     * [ ] A list of roles that need access to displays of full PAN is documented, together with a legitimate business need for each role to have such access. 
+     * [ ] PAN must be masked when displayed such that only personnel with a legitimate business need can see the full PAN. 
+     * [ ] All other roles not specifically authorized to see the full PAN must only see masked PANs.
+* [ ] 3.3b - Examine system configurations to verify that full PAN is only displayed for users/roles with a documented business need, and that PAN is masked for all other requests.
+* [ ] 3.3c - Examine displays of PAN (for example, on screen, on paper receipts) to verify that PANs are masked when displaying cardholder data, and that only those with a legitimate business need are able to see full PAN.
+* [ ] 3.4 - Render PAN unreadable anywhere it is stored (including on portable digital media, backup media, and in logs) by using any of the following approaches:
+One-way hashes based on strong cryptography, (hash must be of the entire PAN)
+Truncation (hashing cannot be used to replace the truncated segment of PAN)
+Index tokens and pads (pads must be securely stored)
+Strong cryptography with associated key-management processes and procedures.
+* [ ] 3.4.1 - If disk encryption is used (rather than file- or column-level database encryption), logical access must be managed separately and independently of native operating system authentication and access control mechanisms (for example, by not using local user account databases or general network login credentials). Decryption keys must not be associated with user accounts.
+* [ ] 3.5 - Examine key-management policies and procedures to verify processes are specified to protect keys used for encryption of cardholder data against disclosure and misuse and include at least the following: 
+Access to keys is restricted to the fewest number of custodians necessary.
+Key-encrypting keys are at least as strong as the dataencrypting keys they protect.
+Key-encrypting keys are stored separately from dataencrypting keys. 
+Keys are stored securely in the fewest possible locations and forms.
+* [ ] 3.5.1 - Examine user access lists to verify that access to keys is restricted to the fewest number of custodians necessary.
+* [ ] 3.5.2 - Examine documented procedures to verify that cryptographic keys used to encrypt/decrypt cardholder data must only exist in one (or more) of the following forms at all times.
+Encrypted with a key-encrypting key that is at least as strong as the data-encrypting key, and that is stored separately from the data-encrypting key
+Within a secure cryptographic device (such as a hardware (host) security module (HSM) or PTS-approved point-of-interaction device)
+* [ ] 3.5.2b - Examine system configurations and key storage locations to verify that cryptographic keys used to encrypt/decrypt cardholder data exist in one (or more) of the following form at all times.
+Encrypted with a key-encrypting key
+Within a secure cryptographic device (such as a hardware (host) security module (HSM) or PTS-approved point-of-interaction device)
+* [ ] 3.5.3 - Store cryptographic keys in the fewest possible locations. 
+* [ ] 3.6.a Additional testing procedure for service provider assessments only: If the service provider shares keys with their customers for transmission or storage of cardholder data, examine the documentation that the service provider provides to their customers to verify that it includes guidance on how to securely transmit, store, and update customers’ keys, in accordance with Requirements 3.6.1 through 3.6.8 below.
+* [ ] 3.6.1.a Verify that key-management procedures specify how to generate strong keys. 
+* [ ] 3.6.1.b Observe the method for generating keys to verify that strong keys are generated. 
+* [ ] 3.6.2.a Verify that key-management procedures specify how to securely distribute keys.
+* [ ] 3.6.2.b Observe the method for distributing keys to verify that keys are distributed securely.
+* [ ] 3.6.3.a Verify that key-management procedures specify how to securely store keys.
+* [ ] 3.6.3.b Observe the method for storing keys to verify that keys are stored securely. 
+* [ ] 3.6.5.a Verify that key-management procedures specify processes for the following:
+The retirement or replacement of keys when the integrity of the key has been weakened
+The replacement of known or suspected compromised keys.
+Any keys retained after retiring or replacing are not used for encryption operations 
+* [ ] 3.6.6.a Verify that manual clear-text key-management procedures specify processes for the use of the following:
+Split knowledge of keys, such that key components are under the control of at least two people who only have knowledge of their own key components; AND 
+Dual control of keys, such that at least two people are required to perform any key-management operations and no one person has access to the authentication materials (for example, passwords or keys) of another
+* [ ] 3.6.7.a Verify that key-management procedures specify processes to prevent unauthorized substitution of keys
+
