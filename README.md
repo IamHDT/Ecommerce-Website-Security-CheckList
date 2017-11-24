@@ -113,3 +113,21 @@ Split knowledge of keys, such that key components are under the control of at le
 Dual control of keys, such that at least two people are required to perform any key-management operations and no one person has access to the authentication materials (for example, passwords or keys) of another
 * [ ] 3.6.7.a Verify that key-management procedures specify processes to prevent unauthorized substitution of keys
 
+### Requirement 4: Encrypt transmission of cardholder data across open, public networks
+* [ ] 4.1 Use strong cryptography and security protocols (for example, TLS, IPSEC, SSH, etc.) to safeguard sensitive cardholder data during transmission over open, public networks, including the following:
+    * [ ] Only trusted keys and certificates are accepted. 
+    * [ ] The protocol in use only supports secure versions or configurations. 
+    * [ ] The encryption strength is appropriate for the encryption methodology in use.
+* [ ] 4.1.c Select and observe a sample of inbound and outbound transmissions as they occur to verify that all cardholder data is encrypted with strong cryptography during transit.
+* [ ] 4.1.d Examine keys and certificates to verify that only trusted keys and/or certificates are accepted. 
+* [ ] 4.1.g For TLS implementations, examine system configurations to verify that TLS is enabled whenever cardholder data is transmitted or received. For example, for browser-based implementations: 
+    * [ ] “HTTPS” appears as the browser Universal Record Locator (URL) protocol, and
+    * [ ] Cardholder data is only requested if “HTTPS” appears as part of the URL.
+* [ ] 4.1.i For all other environments using SSL and/or early TLS: Review the documented Risk Mitigation and Migration Plan to verify it includes:
+    * [ ] Description of usage, including what data is being transmitted, types and number of systems that use and/or support SSL/early TLS, type of environment;
+    * [ ] Risk-assessment results and risk-reduction controls in place; 
+    * [ ] Description of processes to monitor for new vulnerabilities associated with SSL/early TLS; 
+    * [ ] Description of change control processes that are implemented to ensure SSL/early TLS is not implemented into new environments; 
+    * [ ] Overview of migration project plan including target migration completion date no later than June 30, 2016
+* [ ] 4.2.a If end-user messaging technologies are used to send cardholder data, observe processes for sending PAN and examine a sample of outbound transmissions as they occur to verify that PAN is rendered unreadable or secured with strong cryptography whenever it is sent via end-user messaging technologies.
+* [ ] 4.2.b Review written policies to verify the existence of a policy stating that unprotected PANs are not to be sent via end-user messaging technologies.
