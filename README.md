@@ -15,15 +15,15 @@ The OWASP Top 10 - 2013 includes the following changes as compared to the 2010 e
 * [ ] A2 Broken Authentication and Session Management (was formerly 2010-A3)
 
 * [ ] Session Management 
-* [ ] Session ID Properties: In order to keep the authenticated state and track the users progress within the web application, applications provide users with a session identifier (session ID or token) that is assigned at session creation time, and is shared and exchanged by the user and the web application for the duration of the session (it is sent on every HTTP request). The session ID is a “name=value” pair.
-Session ID Name Fingerprinting
-The name used by the session ID should not be extremely descriptive nor offer unnecessary details about the purpose and meaning of the ID.
-The session ID names used by the most common web application development frameworks can be easily fingerprinted [0], such as PHPSESSID (PHP), JSESSIONID (J2EE), CFID & CFTOKEN (ColdFusion), ASP.NET_SessionId (ASP .NET), etc. Therefore, the session ID name can disclose the technologies and programming languages used by the web application.
-It is recommended to change the default session ID name of the web development framework to a generic name, such as “id”.
-Session ID Length: The session ID must be long enough to prevent brute force attacks, where an attacker can go through the whole range of ID values and verify the existence of valid sessions. 
-The session ID length must be at least 128 bits (16 bytes).
-Session ID Entropy: The session ID must be unpredictable (random enough) to prevent guessing attacks, where an attacker is able to guess or predict the ID of a valid session through statistical analysis techniques. For this purpose, a good PRNG (Pseudo Random Number Generator) must be used.
-The session ID value must provide at least 64 bits of entropy (if a good PRNG is used, this value is estimated to be half the length of the session ID).
+    * [ ]  Session ID Properties: In order to keep the authenticated state and track the users progress within the web application, applications provide users with a session identifier (session ID or token) that is assigned at session creation time, and is shared and exchanged by the user and the web application for the duration of the session (it is sent on every HTTP request). The session ID is a “name=value” pair.
+* [ ] Session ID Name Fingerprinting
+    * [ ] The name used by the session ID should not be extremely descriptive nor offer unnecessary details about the purpose and meaning of the ID.
+    * [ ] The session ID names used by the most common web application development frameworks can be easily fingerprinted [0], such as PHPSESSID (PHP), JSESSIONID (J2EE), CFID & CFTOKEN (ColdFusion), ASP.NET_SessionId (ASP .NET), etc. Therefore, the session ID name can disclose the technologies and programming languages used by the web application.
+    * [ ] It is recommended to change the default session ID name of the web development framework to a generic name, such as “id”.
+* [ ] Session ID Length: The session ID must be long enough to prevent brute force attacks, where an attacker can go through the whole range of ID values and verify the existence of valid sessions. 
+    * [ ] The session ID length must be at least 128 bits (16 bytes).
+    * [ ] Session ID Entropy: The session ID must be unpredictable (random enough) to prevent guessing attacks, where an attacker is able to guess or predict the ID of a valid session through statistical analysis techniques. For this purpose, a good PRNG (Pseudo Random Number Generator) must be used.
+      The session ID value must provide at least 64 bits of entropy (if a good PRNG is used, this value is estimated to be half the length of the session ID).
 Session ID Content (or Value): The session ID content (or value) must be meaningless to prevent information disclosure attacks, where an attacker is able to decode the contents of the ID and extract details of the user, the session, or the inner workings of the web application.
 Session Management Implementation
 Built-in Session Management Implementations:
