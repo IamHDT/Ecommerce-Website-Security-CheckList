@@ -7,6 +7,17 @@
 [![Join the chat at https://gitter.im/CodepinIO/Ecommerce-Website-Security-CheckList](https://badges.gitter.im/Front-End-Checklist/Lobby.svg)](https://gitter.im/CodepinIO/Ecommerce-Website-Security-CheckList)
 [![CC0](https://img.shields.io/badge/license-CC0-green.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
+## Table of Contents
+
+1. **[SDLC and development guidelines](#sdlc-and-development-guidelines)**
+2. **[PCI DSS (Credit/Debit Card Handling) in applications](#pci-dss-creditdebit-card-handling-in-applications)**
+3. **[Infrastructure hardening (IIS, Apache, Windows)](#infrastructure-hardening-iis-apache-windows)**
+4. **[Password policies](#password-policies)**
+5. **[General security best practices](#general-security-best-practices)**
+6. **[Interfaces](#interfaces)**
+7. **[What are some proven application security principles?](#what-are-some-proven-application-security-principles)**
+
+
 ## SDLC and development guidelines
 The OWASP Top 10 - 2013 includes the following changes as compared to the 2010 edition:
 
