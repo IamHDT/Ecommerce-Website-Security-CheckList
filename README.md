@@ -286,3 +286,24 @@ Dual control of keys, such that at least two people are required to perform any 
 * [ ] 10.6.3 Follow up exceptions and anomalies identified during the review process.
 * [ ] 10.7 - Retain audit trail history for at least one year, with a minimum of three months immediately available for analysis (for example, online, archived, or restorable from backup)
 * [ ] 10.8 - Ensure that security policies and operational procedures for monitoring all access to network resources and cardholder data are documented, in use, and known to all affected parties.
+https://www.pcisecuritystandards.org/documents/PCI_DSS_v3-1.pdf
+
+## Infrastructure hardening (IIS, Apache, Windows)
+Review and implement hardening standards available at www.cisecurity.org
+
+## Password policies
+### For users:
+Minimum 8 characters
+Complexity set requiring a combination of letters, numbers and optional special characters
+Account locked for at least 30 mins after 5 incorrect attempts
+
+### For administrators:
+Minimum 12 characters
+Complexity set requiring a combination of letters, numbers and special characters
+Account locked out indefinitely until unlocked after 5 incorrect attempts
+
+## General security best practices
+SO 27001 Annex A Controls (apply the ones applicable and where a risk exists)
+
+## Interfaces
+Restriction by IP Address
