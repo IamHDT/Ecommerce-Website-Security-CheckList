@@ -249,3 +249,40 @@ Dual control of keys, such that at least two people are required to perform any 
     * [ ] Application IDs for database applications can only be used by the applications (and not by individual users or other non-application processes).
 * [ ] 8.8 Ensure that security policies and operational procedures for identification and authentication are documented, in use, and known to all affected parties.
 
+### Requirement 10: Track and monitor all access to network resources and cardholder data
+* [ ] 10.1 Implement audit trails to link all access to system components to each individual user.
+* [ ] 10.2 Implement automated audit trails for all system components to reconstruct the following events:
+    * [ ] 10.2.1 All individual user accesses to cardholder data
+    * [ ] 10.2.2 All actions taken by any individual with root or administrative privileges
+    * [ ] 10.2.3 Access to all audit trails
+    * [ ] 10.2.4 Invalid logical access attempts
+    * [ ] 10.2.5 Use of and changes to identification and authentication mechanisms—including but not limited to creation of new accounts and elevation of privileges—and all changes, additions, or deletions to accounts with root or administrative privileges
+    * [ ] 10.2.6 Initialization, stopping, or pausing of the audit logs
+    * [ ] 10.2.7 Creation and deletion of systemlevel objects
+* [ ] 10.3 Record at least the following audit trail entries for all system components for each event:
+    * [ ] 10.3.1 User identification
+    * [ ] 10.3.2 Type of event
+    * [ ] 10.3.3 Date and time
+    * [ ] 10.3.4 Success or failure indication
+    * [ ] 10.3.5 Origination of event
+    * [ ] 10.3.6 Identity or name of affected data, system component, or resource.
+* [ ] 10.4 Using time-synchronization technology, synchronize all critical system clocks and times and ensure that the following is implemented for acquiring, distributing, and storing time.
+    * [ ] 10.4.1 Critical systems have the correct and consistent time.
+    * [ ] 10.4.2 Time data is protected.
+    * [ ] 10.4.3 Time settings are received from industry-accepted time sources.
+* [ ] 10.5 Secure audit trails so they cannot be altered.
+    * [ ] 10.5.1 Limit viewing of audit trails to those with a job-related need.
+    * [ ] 10.5.2 Protect audit trail files from unauthorized modifications.
+    * [ ] 10.5.3 Promptly back up audit trail files to a centralized log server or media that is difficult to alter.
+    * [ ] 10.5.4 Write logs for external-facing technologies onto a secure, centralized, internal log server or media device.
+    * [ ] 10.5.5 Use file-integrity monitoring or change-detection software on logs to ensure that existing log data cannot be changed without generating alerts (although new data being added should not cause an alert).
+* [ ] 10.6 Review logs and security events for all system components to identify anomalies or suspicious activity.
+    * [ ] 10.6.1 Review the following at least daily: 
+    * [ ] All security events 
+    * [ ] Logs of all system components that store, process, or transmit CHD and/or SAD 
+    * [ ] Logs of all critical system components 
+    * [ ] Logs of all servers and system components that perform security functions (for example, firewalls, intrusion-detection systems/intrusion-prevention systems (IDS/IPS), authentication servers, e-commerce redirection servers, etc.).
+    * [ ] 10.6.2 Review logs of all other system components periodically based on the organization’s policies and risk management strategy, as determined by the organization’s annual risk assessment.
+* [ ] 10.6.3 Follow up exceptions and anomalies identified during the review process.
+* [ ] 10.7 - Retain audit trail history for at least one year, with a minimum of three months immediately available for analysis (for example, online, archived, or restorable from backup)
+* [ ] 10.8 - Ensure that security policies and operational procedures for monitoring all access to network resources and cardholder data are documented, in use, and known to all affected parties.
