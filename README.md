@@ -319,3 +319,7 @@ Restriction by IP Address
 - [Don’t trust infrastructure](https://www.owasp.org/index.php/Don%E2%80%99t_trust_infrastructure)
 - [Don’t trust services](https://www.owasp.org/index.php/Don%E2%80%99t_trust_services)
 - [Establish secure defaults](https://www.owasp.org/index.php/Establish_secure_defaults) (psychological acceptability)
+
+## Authors
+
+**[HDT](https://github.com/IamHDT)**
