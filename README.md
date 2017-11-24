@@ -133,76 +133,76 @@ Dual control of keys, such that at least two people are required to perform any 
 * [ ] 4.2.b Review written policies to verify the existence of a policy stating that unprotected PANs are not to be sent via end-user messaging technologies.
 
 ### Requirement 6: Develop and maintain secure systems and applications
-    * [ ] 6.1.a Examine policies and procedures to verify that processes are defined for the following: 
+* [ ] 6.1.a Examine policies and procedures to verify that processes are defined for the following: 
         * [ ] To identify new security vulnerabilities 
         * [ ] To assign a risk ranking to vulnerabilities that includes identification of all “high risk” and “critical” vulnerabilities. 
         * [ ] To use reputable outside sources for security vulnerability information.
-    * [ ] 6.2.a Examine policies and procedures related to securitypatch installation to verify processes are defined for: 
+* [ ] 6.2.a Examine policies and procedures related to securitypatch installation to verify processes are defined for: 
         * [ ] Installation of applicable critical vendor-supplied security patches within one month of release. 
         * [ ] Installation of all applicable vendor-supplied security patches within an appropriate time frame (for example, within three months).
-    * [ ] 6.2.b For a sample of system components and related software, compare the list of security patches installed on each system to the most recent vendor security-patch list, to verify the following: 
+* [ ] 6.2.b For a sample of system components and related software, compare the list of security patches installed on each system to the most recent vendor security-patch list, to verify the following: 
         * [ ] That applicable critical vendor-supplied security patches are installed within one month of release. 
         * [ ] All applicable vendor-supplied security patches are installed within an appropriate time frame (for example, within three months).
-    * [ ] 6.3.a Examine written software-development processes to verify that the processes are based on industry standards and/or best practices.
-    * [ ] 6.3.b Examine written software-development processes to verify that information security is included throughout the life cycle.
-    * [ ] 6.3.c Examine written software-development processes to verify that software applications are developed in accordance with PCI DSS.
-    * [ ] 6.3.1 Examine written software-development procedures and interview responsible personnel to verify that preproduction and/or custom application accounts, user IDs and/or passwords are removed before an application goes into production or is released to customers.
-    * [ ] 6.3.2.a Examine written software-development procedures and interview responsible personnel to verify that all custom application code changes must be reviewed (using either manual or automated processes) as follows:
+* [ ] 6.3.a Examine written software-development processes to verify that the processes are based on industry standards and/or best practices.
+* [ ] 6.3.b Examine written software-development processes to verify that information security is included throughout the life cycle.
+* [ ] 6.3.c Examine written software-development processes to verify that software applications are developed in accordance with PCI DSS.
+* [ ] 6.3.1 Examine written software-development procedures and interview responsible personnel to verify that preproduction and/or custom application accounts, user IDs and/or passwords are removed before an application goes into production or is released to customers.
+* [ ] 6.3.2.a Examine written software-development procedures and interview responsible personnel to verify that all custom application code changes must be reviewed (using either manual or automated processes) as follows:
     * [ ] Code changes are reviewed by individuals other than the originating code author, and by individuals who are knowledgeable in code-review techniques and secure coding practices.
     * [ ] Code reviews ensure code is developed according to secure coding guidelines (see PCI DSS Requirement 6.5).
     * [ ] Appropriate corrections are implemented prior to release.
     * [ ] Code-review results are reviewed and approved by management prior to release.
-    * [ ] 6.4 Examine policies and procedures to verify the following are defined: 
+* [ ] 6.4 Examine policies and procedures to verify the following are defined: 
     * [ ] Development/test environments are separate from production environments with access control in place to enforce separation.
     * [ ] A separation of duties between personnel assigned to the development/test environments and those assigned to the production environment.
     * [ ] Production data (live PANs) are not used for testing or development. 
     * [ ] Test data and accounts are removed before a production system becomes active. 
     * [ ] Change control procedures related to implementing security patches and software modifications are documented.
-    * [ ] 6.4.1.a Examine network documentation and network device configurations to verify that the development/test environments are separate from the production environment(s)
-    * [ ] 6.4.1.b Examine access controls settings to verify that access controls are in place to enforce separation between the development/test environments and the production environment(s).
-    * [ ] 6.4.3.a Observe testing processes and interview personnel to verify procedures are in place to ensure production data (live PANs) are not used for testing or development.
-    * [ ] 6.4.4.a Observe testing processes and interview personnel to verify test data and accounts are removed before a production system becomes active.
-    * [ ] 6.4.5.a Examine documented change control procedures related to implementing security patches and software modifications and verify procedures are defined for: 
+* [ ] 6.4.1.a Examine network documentation and network device configurations to verify that the development/test environments are separate from the production environment(s)
+* [ ] 6.4.1.b Examine access controls settings to verify that access controls are in place to enforce separation between the development/test environments and the production environment(s).
+* [ ] 6.4.3.a Observe testing processes and interview personnel to verify procedures are in place to ensure production data (live PANs) are not used for testing or development.
+* [ ] 6.4.4.a Observe testing processes and interview personnel to verify test data and accounts are removed before a production system becomes active.
+* [ ] 6.4.5.a Examine documented change control procedures related to implementing security patches and software modifications and verify procedures are defined for: 
     * [ ] Documentation of impact
     * [ ] Documented change approval by authorized parties
     * [ ] Functionality testing to verify that the change does not adversely impact the security of the system
     * [ ] Back-out procedures
-    * [ ] 6.4.5.2 Verify that documented approval by authorized parties is present for each sampled change.
-    * [ ] 6.4.5.3.a For each sampled change, verify that functionality testing is performed to verify that the change does not adversely impact the security of the system.
-    * [ ] 6.4.5.3.b For custom code changes, verify that all updates are tested for compliance with PCI DSS Requirement 6.5 before being deployed into production
-    * [ ] 6.4.5.4 Verify that back-out procedures are prepared for each sampled change.
-    * [ ] 6.5.a Examine software-development policies and procedures to verify that training in secure coding techniques is required for developers, based on industry best practices and guidance.
-    * [ ] 6.5.c Examine records of training to verify that software developers received training on secure coding techniques, including how to avoid common coding vulnerabilities, and understanding how sensitive data is handled in memory.
+* [ ] 6.4.5.2 Verify that documented approval by authorized parties is present for each sampled change.
+* [ ] 6.4.5.3.a For each sampled change, verify that functionality testing is performed to verify that the change does not adversely impact the security of the system.
+* [ ] 6.4.5.3.b For custom code changes, verify that all updates are tested for compliance with PCI DSS Requirement 6.5 before being deployed into production
+* [ ] 6.4.5.4 Verify that back-out procedures are prepared for each sampled change.
+* [ ] 6.5.a Examine software-development policies and procedures to verify that training in secure coding techniques is required for developers, based on industry best practices and guidance.
+* [ ] 6.5.c Examine records of training to verify that software developers received training on secure coding techniques, including how to avoid common coding vulnerabilities, and understanding how sensitive data is handled in memory.
     * [ ] 
-    * [ ] 6.5.1 Injectionflaws, especially SQL - Examine software-development policies and procedures and interview responsible personnel to verify that injection flaws are addressed by coding techniques that include: 
+* [ ] 6.5.1 Injectionflaws, especially SQL - Examine software-development policies and procedures and interview responsible personnel to verify that injection flaws are addressed by coding techniques that include: 
     * [ ] Validating input to verify user data cannot modify meaning of commands and queries.
     * [ ] Utilizing parameterized queries.
-    * [ ] 6.5.2 Buffer overflows - Examine software-development policies and procedures and interview responsible personnel to verify that buffer overflows are addressed by coding techniques that include: 
+* [ ] 6.5.2 Buffer overflows - Examine software-development policies and procedures and interview responsible personnel to verify that buffer overflows are addressed by coding techniques that include: 
     * [ ] Validating buffer boundaries. 
     * [ ] Truncating input strings.
-    * [ ] 6.5.3 Insecure cryptographic storage Examine software-development policies and procedures and interview responsible personnel to verify that insecure cryptographic storage is addressed by coding techniques that: 
+* [ ] 6.5.3 Insecure cryptographic storage Examine software-development policies and procedures and interview responsible personnel to verify that insecure cryptographic storage is addressed by coding techniques that: 
         * [ ] Prevent cryptographic flaws. 
         * [ ] * [ ] Use strong cryptographic algorithms and keys.
-    * [ ] 6.5.4 Insecure communications - Examine software-development policies and procedures and interview responsible personnel to verify that insecure communications are addressed by coding techniques that properly authenticate and encrypt all sensitive communications.
-    * [ ] 6.5.5 Improper error handling - Examine software-development policies and procedures and interview responsible personnel to verify that improper error handling is addressed by coding techniques that do not leak information via error messages (for example, by returning generic rather than specific error details).
-    * [ ] 6.5.6 Examine software-development policies and procedures and interview responsible personnel to verify that coding techniques address any “high risk” vulnerabilities that could affect the application, as identified in PCI DSS Requirement 6.1.
-    * [ ] 6.5.7 Cross-site scripting (XSS) - Examine software-development policies and procedures and interview responsible personnel to verify that cross-site scripting (XSS) is addressed by coding techniques that include
+* [ ] 6.5.4 Insecure communications - Examine software-development policies and procedures and interview responsible personnel to verify that insecure communications are addressed by coding techniques that properly authenticate and encrypt all sensitive communications.
+* [ ] 6.5.5 Improper error handling - Examine software-development policies and procedures and interview responsible personnel to verify that improper error handling is addressed by coding techniques that do not leak information via error messages (for example, by returning generic rather than specific error details).
+* [ ] 6.5.6 Examine software-development policies and procedures and interview responsible personnel to verify that coding techniques address any “high risk” vulnerabilities that could affect the application, as identified in PCI DSS Requirement 6.1.
+* [ ] 6.5.7 Cross-site scripting (XSS) - Examine software-development policies and procedures and interview responsible personnel to verify that cross-site scripting (XSS) is addressed by coding techniques that include
     * [ ] Validating all parameters before inclusion
     * [ ] Utilizing context-sensitive escaping.
-    * [ ] 6.5.8 Improper access control (such as insecure direct object references, failure to restrict URL access, directory traversal, and failure to restrict user access to functions). Examine software-development policies and procedures and interview responsible personnel to verify that improper access control—such as insecure direct object references, failure to restrict URL access, and directory traversal—is addressed by coding technique that includes: 
+* [ ] 6.5.8 Improper access control (such as insecure direct object references, failure to restrict URL access, directory traversal, and failure to restrict user access to functions). Examine software-development policies and procedures and interview responsible personnel to verify that improper access control—such as insecure direct object references, failure to restrict URL access, and directory traversal—is addressed by coding technique that includes: 
     * [ ] Proper authentication of users 
     * [ ] Sanitizing input 
     * [ ] Not exposing internal object references to users 
     * [ ] User interfaces that do not permit access to unauthorized functions.
-    * [ ] 6.5.9 Cross-site request forgery (CSRF) - Examine software development policies and procedures and interview responsible personnel to verify that cross-site request forgery (CSRF) is addressed by coding techniques that ensure applications do not rely on authorization credentials and tokens automatically submitted by browsers.
-    * [ ] 6.5.10 Broken authentication and session managementNote: Requirement 6.5.10 is a best practice until June 30, 2015, after which it becomes a requirement. 6.5.10 Examine software development policies and procedures and interview responsible personnel to verify that broken authentication and session management are addressed via coding techniques that commonly include: 
+* [ ] 6.5.9 Cross-site request forgery (CSRF) - Examine software development policies and procedures and interview responsible personnel to verify that cross-site request forgery (CSRF) is addressed by coding techniques that ensure applications do not rely on authorization credentials and tokens automatically submitted by browsers.
+* [ ] 6.5.10 Broken authentication and session managementNote: Requirement 6.5.10 is a best practice until June 30, 2015, after which it becomes a requirement. 6.5.10 Examine software development policies and procedures and interview responsible personnel to verify that broken authentication and session management are addressed via coding techniques that commonly include: 
     * [ ] Flagging session tokens (for example cookies) as “secure” 
     * [ ] Not exposing session IDs in the URL 
     * [ ] Incorporating appropriate time-outs and rotation of session IDs after a successful login
-    * [ ] 6.6 For public-facing web applications, ensure that either one of the following methods is in place as follows:
+* [ ] 6.6 For public-facing web applications, ensure that either one of the following methods is in place as follows:
     * [ ] Examine documented processes, interview personnel, and examine records of application security assessments to verify that public-facing web applications are reviewed—using either manual or automated vulnerability security assessment tools or methods—as follows: - At least annually - After any changes - By an organization that specializes in application security - That, at a minimum, all vulnerabilities in Requirement 6.5 are included in the assessment - That all vulnerabilities are corrected - That the application is re-evaluated after the corrections. 
     * [ ] Examine the system configuration settings and interview responsible personnel to verify that an automated technical solution that detects and prevents web-based attacks (for example, a web-application firewall) is in place as follows: - Is situated in front of public-facing web applications to detect and prevent web-based attacks. - Is actively running and up to date as applicable. - Is generating audit logs. - Is configured to either block web-based attacks, or generate an alert that is immediately investigated.
-    * [ ] 6.7 Examine documentation and interview personnel to verify that security policies and operational procedures for developing and maintaining secure systems and applications are: 
+* [ ] 6.7 Examine documentation and interview personnel to verify that security policies and operational procedures for developing and maintaining secure systems and applications are: 
     * [ ] Documented, 
     * [ ] In use, and 
     * [ ] Known to all affected parties.
