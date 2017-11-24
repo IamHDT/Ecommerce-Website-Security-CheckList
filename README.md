@@ -307,3 +307,15 @@ SO 27001 Annex A Controls (apply the ones applicable and where a risk exists)
 
 ## Interfaces
 Restriction by IP Address
+
+## What are some proven application security principles?
+- Apply [defense in depth](https://www.owasp.org/index.php/Defense_in_depth) (complete mediation)
+- Use [a positive security model](https://www.owasp.org/index.php/Positive_security_model) (fail-safe defaults, minimize attack surface)
+- [Fail securely](https://www.owasp.org/index.php/Fail_securely)
+- Run with [least privilege](https://www.owasp.org/index.php/Least_privilege)
+- [Avoid security by obscurity](https://www.owasp.org/index.php/Avoid_security_by_obscurity) (open design)
+- [Keep security simple](https://www.owasp.org/index.php/Keep_security_simple) (verifiable, economy of mechanism)
+- [Detect intrusions](https://www.owasp.org/index.php/Detect_intrusions) (compromise recording)
+- [Don’t trust infrastructure](https://www.owasp.org/index.php/Don%E2%80%99t_trust_infrastructure)
+- [Don’t trust services](https://www.owasp.org/index.php/Don%E2%80%99t_trust_services)
+- [Establish secure defaults](https://www.owasp.org/index.php/Establish_secure_defaults) (psychological acceptability)
