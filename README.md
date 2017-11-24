@@ -206,3 +206,46 @@ Dual control of keys, such that at least two people are required to perform any 
     * [ ] Documented, 
     * [ ] In use, and 
     * [ ] Known to all affected parties.
+
+### Requirement 8: Identify and authenticate access to system components
+* [ ] 8.1.1 Assign all users a unique ID before allowing them to access system components or cardholder data.
+* [ ] 8.1.2 Control addition, deletion, and modification of user IDs, credentials, and other identifier objects.
+* [ ] 8.1.3 Immediately revoke access for any terminated users.
+* [ ] 8.1.3.b Verify all physical authentication methods—such as, smart cards, tokens, etc.—have been returned or deactivated.
+* [ ] 8.1.4 Remove/disable inactive user accounts within 90 days.
+* [ ] 8.1.5 Manage IDs used by vendors to access, support, or maintain system components via remote access as follows:
+    * [ ] Enabled only during the time period needed and disabled when not in use.
+    * [ ] Monitored when in use.
+* [ ] 8.1.6 Limit repeated access attempts by locking out the user ID after not more than six attempts.
+* [ ] 8.1.7 Set the lockout duration to a minimum of 30 minutes or until an administrator enables the user ID.
+* [ ] 8.1.8 If a session has been idle for more than 15 minutes, require the user to re-authenticate to re-activate the terminal or session.
+* [ ] 8.2 In addition to assigning a unique ID, ensure proper user-authentication management for non-consumer users and administrators on all system components by employing at least one of the following methods to authenticate all users:
+    * [ ] Something you know, such as a password or passphrase
+    * [ ] Something you have, such as a token device or smart card
+    * [ ] Something you are, such as a biometric.
+* [ ] 8.2.1 Using strong cryptography, render all authentication credentials (such as passwords/phrases) unreadable during transmission and storage on all system components.
+* [ ] 8.2.2 Verify user identity before modifying any authentication credential—for example, performing password resets, provisioning new tokens, or generating new keys.
+* [ ] 8.2.3 Passwords/phrases must meet the following:  Require a minimum length of at least seven characters.  Contain both numeric and alphabetic characters. Alternatively, the passwords/phrases must have complexity and strength at least equivalent to the parameters specified above.
+* [ ] 8.2.4 Change user passwords/passphrases at least once every 90 days.
+* [ ] 8.2.5 Do not allow an individual to submit a new password/phrase that is the same as any of the last four passwords/phrases he or she has used.
+* [ ] 8.2.6 Set passwords/phrases for firsttime use and upon reset to a unique value for each user, and change immediately after the first use.
+* [ ] 8.3 Incorporate two-factor authentication for remote network access originating from outside the network by personnel (including users and administrators) and all third parties, (including vendor access for support or maintenance).
+* [ ] 8.4 Document and communicate authentication policies and procedures to all users including:
+    * [ ] Guidance on selecting strong authentication credentials
+    * [ ] Guidance for how users should protect their authentication credentials
+    * [ ] Instructions not to reuse previously used passwords
+    * [ ] Instructions to change passwords if there is any suspicion the password could be compromised.
+* [ ] 8.5 Do not use group, shared, or generic IDs, passwords, or other authentication methods as follows:
+    * [ ] Generic user IDs are disabled or removed.
+    * [ ] Shared user IDs do not exist for system administration and other critical functions.
+    * [ ] Shared and generic user IDs are not used to administer any system components.
+* [ ] 8.5.1 Additional requirement for service providers only: Service providers with remote access to customer premises (for example, for support of POS systems or servers) must use a unique authentication credential (such as a password/phrase) for each customer.
+* [ ] 8.6 Where other authentication mechanisms are used (for example, physical or logical security tokens, smart cards, certificates, etc.), use of these mechanisms must be assigned as follows: 
+    * [ ] Authentication mechanisms must be assigned to an individual account and not shared among multiple accounts.
+    * [ ] Physical and/or logical controls must be in place to ensure only the intended account can use that mechanism to gain access.
+* [ ] 8.7 All access to any database containing cardholder data (including access by applications, administrators, and all other users) is restricted as follows:
+    * [ ] All user access to, user queries of, and user actions on databases are through programmatic methods.
+    * [ ] Only database administrators have the ability to directly access or query databases.
+    * [ ] Application IDs for database applications can only be used by the applications (and not by individual users or other non-application processes).
+* [ ] 8.8 Ensure that security policies and operational procedures for identification and authentication are documented, in use, and known to all affected parties.
+
