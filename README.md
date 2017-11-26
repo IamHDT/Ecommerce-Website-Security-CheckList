@@ -1,7 +1,7 @@
 <h2 align="center">Ecommerce Website Security CheckList</h2>
 
 <p align="center">
-  ![Checklist](/checklist-image.jpeg)
+  ![Checklist](https://raw.githubusercontent.com/IamHDT/Ecommerce-Website-Security-CheckList/master/checklist-image.jpeg)
   
   <em>List of considerations for commerce site auditing and security teams. This is summary of action points and areas that need to be built into the Techinical Specific Document, or will be checked in the Security testing phases..</em>
 </p>
