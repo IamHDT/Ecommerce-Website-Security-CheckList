@@ -16,6 +16,7 @@
 4. **[Password policies](#password-policies)**
 5. **[General security best practices](#general-security-best-practices)**
 6. **[Interfaces](#interfaces)**
+7. **[API Security Checklist](#api-security-checklist)**
 7. **[What are some proven application security principles?](#what-are-some-proven-application-security-principles)**
 
 
