@@ -2,7 +2,7 @@
 
 <p align="center">
   
-  <em>List of considerations for commerce site auditing and security teams. This is summary of action points and areas that need to be built into the Techinical Specific Document, or will be checked in the Security testing phases..</em>
+  <em>It;s a list of considerations being taken for commerce sites for security purposes.  This is summary of action points that are taken and areas need to be focused which are need to be built into the Techinical Specific Document, or will be checked in the Security testing phases..</em>
 </p>
 
 [![Join the chat at https://gitter.im/CodepinIO/Ecommerce-Website-Security-CheckList](https://badges.gitter.im/Front-End-Checklist/Lobby.svg)](https://gitter.im/CodepinIO/Ecommerce-Website-Security-CheckList)
